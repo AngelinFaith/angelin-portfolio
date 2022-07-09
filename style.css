@@ -1,0 +1,244 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  /* height: 100vh; */
+  border: 5px solid;
+  border-image-source: linear-gradient(90deg,#f7c9c9,#fa709a 70%);
+  border-image-slice: 1;
+  background-color: #faeee7;
+}
+
+.padding{
+  padding: 40px;
+}
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  padding: 2% 5%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .navbar .name{
+  font-weight: 900;
+  border: 1px dashed darkviolet;
+  border-radius: 5px;
+  padding: 1%;
+}
+.header .navbar .ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30%;
+  font-style: italic;
+  font-weight: bold;
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main .section-right{
+  width: 60%; 
+  padding: 10%;
+}
+
+.main .section-right .topic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.main .section-right .topic h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.main .section-right .topic .cv-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 32%;
+  gap:10px;
+}
+
+.main .section-left{
+  width: 40%;
+  padding: 4%;
+}
+
+.main .section-left img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.tools{
+  background-color: #eeb4aa !important;
+  width: 100%;
+}
+
+.main-skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 30px;
+}
+
+
+.main-skills .tools-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logos{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 15%;
+  width: 100%;
+  
+}
+.logos .boxes{
+  color: #f6e6e0;
+  margin-bottom: 50px;
+}
+
+.logos .boxes .devicon{
+  font-size: 5rem;
+}
+.logos .boxes p{
+  color: #656565;
+  font-size: 1.2rem;
+}
+.main-projects{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main-projects .project1, 
+.main-projects .project2, 
+.main-projects .project3,
+.main-projects .project4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-projects .project1 .project1-left, 
+.main-projects .project2 .project2-right,
+.main-projects .project3 .project3-left,
+.main-projects .project4 .project4-right{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  padding: 40px;
+}
+
+.project-btn{
+  margin-bottom: 7px;
+    background-color: #a1eacd;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1.5rem 1rem;
+    border: none;
+    margin-right: 5px;
+}
+
+.main-projects .project1 .project1-right, 
+.main-projects .project2 .project2-left,
+.main-projects .project3 .project3-right,
+.main-projects .project4 .project4-left
+{
+  width: 45%;
+}
+
+.main-projects .project1 .project1-right div .project1-img, 
+.main-projects .project2 .project2-left div .project2-img,
+.main-projects .project3 .project3-right div .project3-img,
+.main-projects .project4 .project4-left div .project4-img{
+width: 500px;
+height: 300px;
+position: relative;
+}
+
+.main-projects .project1 .project1-right div .project1-img-laptop,
+.main-projects .project2 .project2-left div .project2-img-laptop,
+.main-projects .project3 .project3-right div .project3-img-laptop,
+.main-projects .project4 .project4-left div .project4-img-laptop{
+  width: 320px;
+height: 200px;
+position: absolute;
+}
+
+.main-projects .project1 .project1-right div .project1-img-mobile,
+.main-projects .project2 .project2-left div .project2-img-mobile,
+.main-projects .project3 .project3-right div .project3-img-mobile,
+.main-projects .project4 .project4-left div .project4-img-mobile{
+  width: 65px;
+  height: 110px;
+  position: absolute;
+}
+.main-projects .project1 .project1-right div .project1-img-laptop{
+  top: 140px;
+  right: 210px;
+}
+.main-projects .project2 .project2-left div .project2-img-laptop{
+bottom: -80px;
+left: 130px;
+}
+.main-projects .project3 .project3-right div .project3-img-laptop{
+  top: 930px;
+  right: 210px;
+}
+.main-projects .project4 .project4-left div .project4-img-laptop{
+  top: 1320px;
+  left: 130px;
+  }
+
+.main-projects .project1 .project1-right div .project1-img-mobile{
+  top: 275px;
+  right: 131px;
+}
+.main-projects .project2 .project2-left div .project2-img-mobile{
+  bottom: -120px;
+  left: 462px;
+}
+.main-projects .project3 .project3-right div .project3-img-mobile{
+  top: 1060px;
+  right: 130px;
+}
+.main-projects .project4 .project4-left div .project4-img-mobile{
+  top: 1460px;
+  left: 462px;
+}
